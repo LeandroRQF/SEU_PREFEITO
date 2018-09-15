@@ -1,0 +1,120 @@
+.body {
+    width : 100%;
+    margin: 0 auto;    
+}
+
+/*header*/
+.header_class_0 {
+    text-align: center;
+    margin-top: 0px;
+    height: 10px;    
+    padding: 0px;
+    background-color: green;
+    border: 0px;
+    color: orangered;
+}
+
+.header_class_1 {
+    height: 30px !important;   
+    width: 100% !important;
+    line-height: 1.8 !important; 
+    padding-left: 5px !important;
+    background-color: crimson !important;
+}
+
+.header_class_2 {
+    height: 10px !important;   
+    width: 100% !important;
+    line-height: 1.0 !important; 
+    padding-left: 0px !important; 
+}
+
+
+/*footer*/
+.footer_class_1 {    
+    height: 30px !important;   
+    width: 100% !important;
+    line-height: 0.0 !important; 
+    padding-left: 0px !important;     
+}
+
+.footer_class_2 {
+    height: 10px !important;   
+    width: 100% !important;
+    line-height: 0.0 !important; 
+    padding-left: 0px !important; 
+}
+
+
+root {
+    width: '100%';    
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+/*cores azul*/
+.navy{
+    background-color: navy;
+}
+
+.darkblue{
+    background-color: darkblue;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.royalblue{
+    background-color: royalblue;
+}
+
+.cornflowerblue{
+    background-color: cornflowerblue;
+}
+
+.dodgerblue{
+    background-color:  dodgerblue;
+}
+
+.darkcyan{
+    background-color: darkcyan;
+}
+
+.deepskyblue{
+    background-color: deepskyblue;
+}
+
+.cadetblue{
+    background-color: cadetblue;
+}
+
+.lightskyblue{
+    background-color: lightskyblue;
+}
+
+
+/*cores amarelo*/
+.yelloe{
+    background-color: yellow;
+}
+
+
+/*cores verde*/
+.green{
+    background-color: green;
+}
+
+
+/*cores laranja*/
+.orange{
+    background-color: orange;
+}
+
+
+/*cores vermelho*/
+.red{
+    background-color: red;
+}
