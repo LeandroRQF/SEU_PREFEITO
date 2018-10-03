@@ -54,6 +54,12 @@ root {
     flex-grow: 1;
 }
 
+
+.tabsIndicator {
+    background-color: '#1890ff' !important;
+}
+
+
 /*cores azul*/
 .navy{
     background-color: navy;

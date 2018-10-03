@@ -12,12 +12,13 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
 import Layout from './layout.css';
+import { Button } from '@material-ui/core';
 
 const styles = theme => ({
     pesquisa: {
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: '#045FB4',
+        backgroundColor: '#151515',
         marginLeft: 0,
         width: '100%',
         [theme.breakpoints.up('sm')]: {
@@ -62,16 +63,16 @@ function BarraPesquisa(props) {
 
     return (
         <div className='root'>
-            <div className='header_class_0' style={{ backgroundColor: '#045FB4', color: '#CEECF5' }}>_</div>
+            <div className='header_class_0' style={{ backgroundColor: '#151515', color: '#FF8000' }}>_</div>
 
-            <AppBar position='static' style={{ backgroundColor: '#CEECF5' }}>
+            <AppBar position='static' style={{ backgroundColor: '#FF8000' }}>
                 <Toolbar>
                     <div className='grow' />
-
+                    
                     <div className={classes.pesquisa}>
                         <div className={classes.pesquisaIcone}>
-                            <SearchIcon />
-                        </div>
+                            <SearchIcon />                            
+                        </div>                        
 
                         <Input
                             placeholder='Pesquisar...'
@@ -80,10 +81,12 @@ function BarraPesquisa(props) {
                                 root: classes.inputRoot,
                                 input: classes.inputInput,
                             }}
-                        />
+                        />                        
                     </div>
 
-                </Toolbar>
+                    <Button>Entrar</Button>
+
+                </Toolbar>                
             </AppBar>
         </div>
     );

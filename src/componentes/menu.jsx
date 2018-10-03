@@ -27,6 +27,46 @@ const styles = theme => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
     },
+
+    tabsRoot: {
+        borderBottom: '1px solid #e8e8e8',
+    },
+    tabsIndicator: {
+        backgroundColor: '#FF8000',
+    },
+    tabRoot: {
+        textTransform: 'initial',
+        minWidth: 72,
+        fontWeight: theme.typography.fontWeightRegular,
+        marginRight: theme.spacing.unit * 4,
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+        '&:hover': {
+            color: '#FF8000',
+            opacity: 1,
+        },
+        '&$tabSelected': {
+            color: '#1890ff',
+            fontWeight: theme.typography.fontWeightMedium,
+        },
+        '&:focus': {
+            color: '#FF8000',
+        },
+    },
+    tabSelected: {},
+    typography: {
+        padding: theme.spacing.unit * 3,
+    },
 });
 
 class Menu extends React.Component {
@@ -44,8 +84,12 @@ class Menu extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position='static' style={{ backgroundColor: '#045FB4', color: '#FFFFFF' }}>
-                    <Tabs value={value} onChange={this.handleChange}>
+                <AppBar position='static' style={{ backgroundColor: '#151515', color: '#FF8000' }}>
+                    <Tabs
+                        value={value}
+                        onChange={this.handleChange}
+                        classes={{ root: classes.tabsRoot, indicator: classes.tabsIndicator }}>
+
                         <Tab label='Institucional' />
                         <Tab label='Serviços' />
                         <Tab label='Acompanhe sua solicitação' />
